@@ -13,7 +13,7 @@ int main(void)
 
 	while (n < 9)
 	{
-		_putchar(str_hbt[n]);
+		putchar(str_hbt[n]);
 		n += 1;
 	}
 	_putchar('\n');

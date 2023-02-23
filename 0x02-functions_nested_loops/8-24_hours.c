@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * Ahmad_Mosaku -  function that prints every minute of the day of Ahmad Mosaku
+ * jack_bauer -  function that prints every minute of the day of Jack Bauer
  * starting from 00:00 to 23:59.
  * Return: nothing.
  */
 
-void Ahmad_Mosaku(void)
+void jack_bauer(void)
 {
 	int x = 0;
 	int j = 0;
@@ -27,4 +27,5 @@ void Ahmad_Mosaku(void)
 		x += 1;
 	}
 }
+
 

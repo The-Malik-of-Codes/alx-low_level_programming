@@ -1,40 +1,32 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - program that prints all arguments it receives
+ * main -  a program that multiplies two numbers.
  * @argc: argument count
- * @argv: argunment vector
+ * @argv: argumrnt vector
  *
- * Return: int
+ * - Your program should print the result of the multiplication,
+ *   followed by a new line
+ * - You can assume that the two numbers and result of the multiplication
+ *   can be stored in an integer
+ * - If the program does not receive two arguments, your program should
+ *   print Error, followed by a new line, and return 1
+ *
+ * Return: 0 (success)
  */
 
 int main(int argc, char *argv[])
 {
-int count, num1, num2, res;
+int mul = 1;
 
-count = num1 = num2 = res = 0;
-if (argc > 0)
+if (argc == 2)
 {
-while (count < argc)
-{
-if (argc == 3)
-{
-if (count == 1)
-num1 = atoi(argv[count]);
-else if (count == 2)
-num2 = atoi(argv[count]);
+printf("Error\n");
 }
 else
-}
-printf("Error\n");
-return (1);
-}
-res = (num1 *num2);
-count++;
-}
-printf("%d\n", res);
+{
+mul = atoi(argv[1]) * atoi(argv[2]);
+printf("%d\n", mul);
 }
 return (0);
 }
-

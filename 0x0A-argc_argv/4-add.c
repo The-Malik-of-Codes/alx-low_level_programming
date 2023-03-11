@@ -1,30 +1,45 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "main.h"
 
 /**
- * check_digit - checks if a given char is number or not
- * @a: input char
- * Return: int
- **/
+ * main - a program that adds positive numbers.
+ * @argc: argument count
+ * @argv: argumrnt vector
+ *
+ * - Print the result, followed by a new line
+ * - If no number is passed to the program, print 0, followed by a new line
+ * - If one of the number contains symbols that are not digits, print Error,
+ *   followed by a new line, and return 1
+ *
+ * Return: 0 (success)
+ */
 
-int check_digit(char *a)
+int main(int argc, char *argv[])
 {
-int i, num, len;
+int c, j, add = 0;
 
-i = 0;
-num = 0;
-len = strlen(a);
-while (i < len)
-{
-if (a[i] < '0' || a[i] > '9')
-{
-return (-1);
-}
+if (argc == 1)
+printf("0\n");
 else
-num = num * 10 + (a[i] - '0');
-i++;
+{
+for (c = 1; c < argc; c++)
+{
+j = 0;
+
+while (argv[c][j])
+{
+if (!isdigit(argv[c][j]))
+{
+return (1);
 }
-return (num);
+j++;
 }
 
+add = add + atoi(argv[c]);
+}
+
+if (add > 0)
+printf("%d\n", add);
+}
+
+return (0);
+}

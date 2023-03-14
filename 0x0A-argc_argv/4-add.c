@@ -1,30 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * check_digit - checks if a given char is number or not
- * @a: input char
- * Return: int
- **/
+*main - adds positive numbers
+*@argc: number of arguments
+*@argv: array of arguments
+*Return: 0 on success, 1 on failure
+*/
 
-int check_digit(char *a)
+int main(int argc, char *argv[])
 {
-int i, num, len;
+int i, j, sum = 0;
 
-i = 0;
-num = 0;
-len = strlen(a);
-while (i < len)
+for (i = 1; i < argc; i++)
 {
-if (a[i] < '0' || a[i] > '9')
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-return (-1);
+if (argv[i][j] < '0' || argv[i][j] > '9')
+{
+printf("Error\n");
+return (1);
 }
-else
-num = num * 10 + (a[i] - '0');
-i++;
-}
-return (num);
 }
 
+sum += atoi(argv[i]);
+}
+
+printf("%d\n", sum);
+
+return (0);
+}

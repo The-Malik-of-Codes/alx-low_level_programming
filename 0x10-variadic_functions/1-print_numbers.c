@@ -27,4 +27,3 @@ printf("%d", aux);
 va_end(arguments);
 printf("\n");
 }
-

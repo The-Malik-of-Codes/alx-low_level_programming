@@ -1,32 +1,15 @@
 #include "main.h"
 
 /**
-* _strcmp - function that compares two strings.
-*
-* @s1: pointer to char source 1
-* @s2: pointer to char source 2
-* Return: int
-*/
+ * _strcmp - compare
+ * @s1 : pointerto char params
+ * @s2 : pointer to char params
+ * Return: *dest
+ */
 
 int _strcmp(char *s1, char *s2)
 {
-int i = 0;
-int aux;
-
-while (*(s1 + i) != '\0')
-{
-if (*(s1 + i) > *(s2 + i))
-{
-aux = *(s1 + i) - *(s2 + i);
-return (aux);
+	(void)s1;
+	(void)s2;
+	return (0);
 }
-else if (*(s1 + i) < *(s2 + i))
-{
-aux = *(s1 + i) - *(s2 + i);
-return (aux);
-}
-i += 1;
-}
-return (0);
-}
-

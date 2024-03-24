@@ -1,73 +1,42 @@
-# C - Doubly linked lists
+# Low-Level Programming README
 
-In this project, I learned about using doubly-linked lists in C.
+Welcome to the world of low-level programming! This README will guide you through the essentials of understanding and working with low-level code. Whether you're diving into assembly language, system programming, or embedded systems, this document will help you get started.
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Getting Started](#getting-started)
+3. [Prerequisites](#prerequisites)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-* **0. Print list**
-  * [0-print_dlistint.c](./0-print_dlinstint.c): C function that prints all the elements
-  of a doubly-linked `dlistint_t` list.
-  * Returns the number of nodes in the list.
+## Introduction
+Low-level programming involves working directly with hardware and system resources. It's a fascinating field that allows you to optimize performance, write efficient code, and gain a deeper understanding of how computers work at the lowest levels.
 
-* **1. List length**
-  * [1-dlistint_len.c](./1-dlistint_len.c): C function that returns the number of nodes in
-  a doubly-linked `dlistint_t` list.
+## Getting Started
+Before you dive into low-level programming, make sure you have a solid understanding of computer architecture, memory management, and data structures. Familiarize yourself with assembly languages and system calls.
 
-* **2. Add node**
-  * [2-add_dnodeint.c](./2-add_dnodeint.c): C function that adds a new node at the
-  beginning of a doubly-linked `dlistint_t` list.
-  * If the function fails - returns `NULL`.
-  * Otherwise - returns the address of the new element.
+## Prerequisites
+- Basic knowledge of programming concepts
+- Familiarity with C/C++ or assembly languages
+- A development environment (IDE or text editor)
+- Patience and curiosity!
 
-* **3. Add node at the end**
-  * [3-add_dnodeint_end.c](./3-add_dnodeint_end.c): C function that adds a new
-  node at the end of a doubly-linked `dlistint_t` list.
-  * If the function fails - returns `NULL`.
-  * Otherwise - returns the address of the new element.
+## Installation
+1. Set up your development environment:
+   - Install a C/C++ compiler (e.g., GCC)
+   - Choose an assembler (e.g., NASM for x86 assembly)
+2. Clone this repository:
+   ```
+   git@github.com:The-Malik-of-Codes/alx-low_level_programming.git
+   ```
 
-* **4. Free list**
-  * [4-free_dlistint.c](./4-free_dlistint.c): C function that frees a
-  doubly-linked `dlistint_t` list.
+## Usage
+Explore the code examples in this repository. Each folder contains a different topic related to low-level programming. Dive into assembly code, explore memory layouts, and experiment with system calls.
 
-* **5. Get node at index**
-  * [5-get_dnodeint.c](./5-get_dnodeint.c): C function that locates a given node of a
-  doubly-linked `dlistint_t` list.
-  * The parameter `index` is the index of the node to locate - indices start at `0`.
-  * If the node does not exist - returns `NULL`.
-  * Otherwise - returns the address of the located node.
+## Contributing
+Contributions are welcome! If you find a bug, have an improvement, or want to add more examples, feel free to submit a pull request. Let's learn and grow together.
 
-* **6. Sum list**
-  * [6-sum_dlistint.c](./6-sum_dlistint.c): C function that sums all the data (`n`)
-  of a doubly-linked `dlistint_t` list.
-  * If the list is empty - returns `0`.
-  * Otherwise - returns the sum of all the data (`n`).
-
-* **7. Insert at index**
-  * [7-insert_dnodeint.c](./7-insert_dnodeint.c): C function that inserts a new node at a
-  given position.
-  * The parameter `idx` is the index of the list where the new node should
-  be added - indices start at `0`.
-  * If the function fails - returns `NULL`.
-  * Otherwise - returns the address of the new element.
-  * Requires compilation with functions defined in [2-add_dnodeint.c](./2-add_dnodeint.c)
-  and [3-add_dnodeint_end.c](./3-add_dnodeint_end.c).
-
-* **8. Delete at index**
-  * [8-delete_dnodeint.c](./8-delete_dnodeint.c): C function that deletes the node at
-  index `index` of a doubly-linked `dlistint_t` list.
-  * The paramter `index` is the index of the node to delete - indices start at `0`.
-  * If the function fails - returns `-1`.
-  * Otherwise - returns `1`.
-
-* **9. Crackme4**
-  * [100-password](./100-password): Text file containing the password for the
-  [crackme4](https://github.com/holbertonschool/0x16.c) executable.
-
-* **10. Palindromes**
-  * [102-result](./102-result): Text file containing the largest palindrome made from a
-  product of two three-digit numbers.
-
-* **11. Crackme5**
-  * [103-keygen.c](./103-keygen.c): C function that generates passwords for the
-  [crackme5](https://github.com/holbertonschool/0x16.c) executable.
-  * Usage of the crackme: `./crackme5 username key`
-  * Usage of the keygen: `./keygen5 username`
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

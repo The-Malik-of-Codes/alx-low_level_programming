@@ -1,8 +1,6 @@
 0x18. C - Dynamic libraries
 ===========================
 
--   By Nderitu
-
 Tasks
 -----
 

@@ -29,7 +29,7 @@ Before you dive into low-level programming, make sure you have a solid understan
    - Choose an assembler (e.g., NASM for x86 assembly)
 2. Clone this repository:
    ```
-   git@github.com:The-Malik-of-Codes/alx-low_level_programming.git
+   git clone git@github.com:The-Malik-of-Codes/alx-low_level_programming.git
    ```
 
 ## Usage
